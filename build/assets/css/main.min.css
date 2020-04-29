@@ -427,9 +427,27 @@ h2 {
   margin-bottom: 15px; }
 
 #download {
-  background: #5825ec;
+  color: white;
+  text-align: center;
+  background: linear-gradient(140deg, rgba(83, 21, 238, 0.9) 28%, rgba(16, 130, 245, 0.9) 100%), url("../img/downloadBackground.png") no-repeat;
   padding: 100px 0;
-  margin-top: -70px; }
+  margin-top: -70px;
+    margin-top-background-size: cover; }
+  #download h2 {
+    font-size: 68px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white; }
+  #download p {
+    width: 100%;
+    max-width: 450px;
+    margin: 20px auto;
+    font-weight: 900; }
+  #download .button {
+    position: relative;
+    width: 220px;
+    margin: 0 15px; }
 
 .flex-video {
   height: 0;
