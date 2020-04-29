@@ -224,7 +224,8 @@ input[type="button"] {
   border-radius: 4px;
   cursor: pointer;
   box-sizing: border-box;
-  transition: all 0.2s ease; }
+  transition: all 0.2s ease;
+  box-shadow: 0 20px 12px -15px rgba(0, 0, 0, 0.2); }
   .button:hover, .button:active, .button:focus,
   button:hover,
   button:active,
@@ -338,10 +339,10 @@ hr {
     background: inherit;
     content: " ";
     height: 100%;
-    height: 400px;
+    height: 600px;
     left: 0;
     right: 0;
-    transform: skewY(-5deg);
+    transform: skewY(-10deg);
     transform-origin: 100%;
     z-index: -1; }
   #features h2 {
@@ -372,6 +373,63 @@ hr {
   border-top: 3px solid #00adff; }
   .burger .fa-hamburger {
     color: #00adff; }
+
+#brands ul {
+  margin: 0;
+  padding: 20px 40px;
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(6, auto); }
+  @media only screen and (max-width: 550px) {
+    #brands ul {
+      grid-template-columns: repeat(3, auto); } }
+  #brands ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: column, row;
+    justify-content: center; }
+  #brands ul li img {
+    object-fit: contain; }
+
+#brands img {
+  width: 100%;
+  max-width: 80px;
+  filter: opacity(75%); }
+
+#discount {
+  margin-top: 65px; }
+
+.discountLayout {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .discountLayout img {
+    min-width: 300px;
+    width: 55%;
+    margin-right: -80px; }
+
+#discount .wrapper {
+  height: 600px; }
+
+.offer {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 10px; }
+
+.offer .button {
+  background: #009efd;
+  background: linear-gradient(140deg, #009efd 0%, #15c9cb 50%, #2af598 100%);
+  color: white;
+  padding: 20 80px;
+  font-size: 18px; }
+
+h2 {
+  margin-bottom: 15px; }
+
+#download {
+  background: #5825ec;
+  padding: 100px 0;
+  margin-top: -70px; }
 
 .flex-video {
   height: 0;
@@ -404,7 +462,8 @@ hr {
     margin: 0 auto; }
   #header h1 {
     margin-bottom: 10px;
-    color: white; }
+    color: white;
+    text-transform: uppercase; }
   #header #subheader {
     font-weight: 600;
     font-size: 18px; }
@@ -436,25 +495,3 @@ hr {
     background: white;
     color: #00adff;
     box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2); }
-
-#brands ul {
-  margin: 0;
-  padding: 20px 40px;
-  background: white;
-  display: grid;
-  grid-template-columns: repeat(6, auto); }
-  @media only screen and (max-width: 550px) {
-    #brands ul {
-      grid-template-columns: repeat(3, auto); } }
-  #brands ul li {
-    list-style: none;
-    display: flex;
-    flex-direction: column, row;
-    justify-content: center; }
-  #brands ul li img {
-    object-fit: contain; }
-
-#brands img {
-  width: 100%;
-  max-width: 80px;
-  filter: opacity(75%); }
