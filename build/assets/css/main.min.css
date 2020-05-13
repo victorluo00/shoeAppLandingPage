@@ -449,6 +449,16 @@ h2 {
     width: 220px;
     margin: 0 15px; }
 
+#footer {
+  text-align: center;
+  padding: 60px 0; }
+
+li {
+  list-style: none; }
+  li a {
+    padding: 0 20px;
+    text-transform: uppercase; }
+
 .flex-video {
   height: 0;
   margin-bottom: 0.88889rem;
